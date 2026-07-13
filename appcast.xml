@@ -15,21 +15,7 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
             <sparkle:shortVersionString>1.1.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>10.13</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Paper Annotator 1.1.0
-
-**Sweep Pass (速扫模式)** — mark 100–200 awkward sentences by intuition, batch-rewrite them with agents, review fast, and write them all back.
-
-- **Sentence-click marking**: toggle Sweep mode in the reading pane — one click marks a whole sentence with the sticky preset, click again to undo. Number keys 1–0 switch the active preset; Esc clears the pending selection.
-- **速扫 / 语感 preset**: a new quick-mark chip routes "reads awkward" marks to the language-quality skill — no web-source requirement, built for pure phrasing passes.
-- **Focus Mode keyboard review**: press A to accept the shown candidate and auto-advance, Z to revoke; arrow keys skip without deciding.
-- **Batch dispatch**: `export-agent-prompt --max-per-batch N` splits large skill×section groups into deterministic sub-batches sized for parallel sub-agents; language-quality batches are exempt from the per-candidate tradeoff requirement.
-- **Batch writeback**: `commit --all-accepted` writes every accepted candidate back to the manuscript — one commit each, descending source order, with a span-conflict pre-check and resumable progress.
-- **Standalone manuscript HTML**: `export-manuscript-html` renders the current manuscript to a self-contained journal-styled HTML file.
-- **Problematized writing prompts**: the appeal-tune and final-review skills now demand real problematization (name the corrected premise or the doctrinal incoherence) instead of rhetorical polish.
-
-Requirements: Apple silicon Mac running macOS 10.13 or later.
-]]></description>
-            <enclosure url="https://github.com/semantic-craft/paper-annotator-releases/releases/download/v1.1.0/paper-annotator-desktop-1.1.0-macos-arm64.zip" length="37649587" type="application/octet-stream" sparkle:edSignature="AxDGo2GyswEiSjnugnP1llPqWpAwa1rwe6+Icaapv6MpYu2RLYehAleiGY+GAyMDf/fUCMOg0J5wNZmRwS/8AQ=="/>
+            <enclosure url="https://github.com/semantic-craft/paper-annotator-releases/releases/download/v1.1.0/paper-annotator-desktop-1.1.0-macos-arm64.zip" length="37651534" type="application/octet-stream" sparkle:edSignature="MvtAjYTDde181E/cocyeX5T7FLzUxzHEaalXYqi53+5LmN+/XSWYsxHiH+guYYQ18AR9GKgsy8ziC2BwFsQTBA=="/>
         </item>
         <item>
             <title>1.0.1</title>
@@ -73,6 +59,6 @@ Requirements: Apple silicon Mac running macOS 10.13 or later.
     </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: xOppOaiwV+2HYqi78dlms6WpmWu39s0EdpKstjh7YfzqUCaLgdFmd31pAI8AKM6Zerl1tF2tj5YHkZnagj+fBA==
-length: 5640
+edSignature: cfwBDHzYlWCZSlJzhADD9+/3pjTzQ8ce2YD/xaK52vQvVxvELwcSRwUWD2rEyLS8YGVIIWo2gZ8J92qox9XyBQ==
+length: 4006
 -->
