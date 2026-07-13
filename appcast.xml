@@ -1,9 +1,38 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
-  <channel>
-    <title>Paper Annotator Updates</title>
-    <link>https://github.com/semantic-craft/paper-annotator-releases/releases</link>
-    <description>Signed macOS updates for Paper Annotator.</description>
-    <language>en</language>
-  </channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!-- sparkle-sign-warning:
+IMPORTANT: This file was signed by Sparkle. Any modifications to this file requires re-signing this file with generate_appcast or sign_update! The signed signature will be embedded at the end of this file.
+-->
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>Paper Annotator Updates</title>
+        <link>https://github.com/semantic-craft/paper-annotator-releases/releases</link>
+        <description>Signed macOS updates for Paper Annotator.</description>
+        <language>en</language>
+        <item>
+            <title>1.0.0</title>
+            <pubDate>Mon, 13 Jul 2026 11:28:56 +0800</pubDate>
+            <sparkle:version>1.0.0</sparkle:version>
+            <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>10.13</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# Paper Annotator 1.0.0
+
+The first standalone macOS release of Paper Annotator.
+
+- Open Markdown Manuscripts or paired HTML Previews from Finder, the File menu, drag-and-drop, or Recent Files.
+- Read in journal or plain-Markdown views while preserving source-offset Anchors.
+- Create, route, review, and human-accept Candidates without writing the Manuscript.
+- Run fully offline with the Node engine, Source Han Serif font, and review workbench bundled inside the app.
+- Install from a signed, notarized drag-and-drop DMG.
+- Receive future signed updates through the public Sparkle channel; installation remains user-controlled.
+
+Requirements: Apple silicon Mac running macOS 10.13 or later.
+]]></description>
+            <enclosure url="https://github.com/semantic-craft/paper-annotator-releases/releases/download/v1.0.0/paper-annotator-desktop-1.0.0-macos-arm64.zip" length="37632664" type="application/octet-stream" sparkle:edSignature="FCM4TyHS5NeBqgG/PktSy3GGkhXssRrM4wL8yrtPe0dkUAmtHDXR7Qcfq5PigcN5e0yI0+87vKP2jDsKv1n8AQ=="/>
+        </item>
+    </channel>
 </rss>
+<!-- sparkle-signatures:
+edSignature: z9FlV1qBSHYuqFR1O0CIvM4MAEvkBfDBk9C0bwy9JUSmLjx3nL8HffHeq4lLmJOHZopjKIMQPJusbuPEraWPBg==
+length: 2168
+-->
