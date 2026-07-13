@@ -9,6 +9,23 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
         <description>Signed macOS updates for Paper Annotator.</description>
         <language>en</language>
         <item>
+            <title>1.0.1</title>
+            <pubDate>Mon, 13 Jul 2026 11:58:30 +0800</pubDate>
+            <sparkle:version>1.0.1</sparkle:version>
+            <sparkle:shortVersionString>1.0.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>10.13</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# Paper Annotator 1.0.1
+
+- Adds **Check for Updates…** to the Paper Annotator application menu.
+- Runs Sparkle's foreground update check so the result is shown immediately.
+- Keeps automatic background update checks enabled.
+
+Requirements: Apple silicon Mac running macOS 10.13 or later.
+]]></description>
+            <enclosure url="https://github.com/semantic-craft/paper-annotator-releases/releases/download/v1.0.1/paper-annotator-desktop-1.0.1-macos-arm64.zip" length="37630201" type="application/octet-stream" sparkle:edSignature="RAkj3S78gC/GU9eyDN5aGH3ZbzvS3J3oJa1T89VpPxIiHWvRSgSEI/RkVa811TUMbthCvftQPn8cyJYb0yrqDw=="/>
+        </item>
+        <item>
             <title>1.0.0</title>
             <pubDate>Mon, 13 Jul 2026 11:28:56 +0800</pubDate>
             <sparkle:version>1.0.0</sparkle:version>
@@ -33,6 +50,6 @@ Requirements: Apple silicon Mac running macOS 10.13 or later.
     </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: z9FlV1qBSHYuqFR1O0CIvM4MAEvkBfDBk9C0bwy9JUSmLjx3nL8HffHeq4lLmJOHZopjKIMQPJusbuPEraWPBg==
-length: 2168
+edSignature: hzBMs3wyRS61rp7xihdGgwBs0gSb26+gItUUkjp9w8lKvToWqBgzQdRAKwH1poWWuTdMBmMSD4xz7AkE6DvZBw==
+length: 3271
 -->
