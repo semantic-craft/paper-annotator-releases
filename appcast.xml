@@ -9,6 +9,27 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
         <description>Signed macOS updates for Paper Annotator.</description>
         <language>en</language>
         <item>
+            <title>1.1.2</title>
+            <pubDate>Wed, 15 Jul 2026 07:52:44 +0800</pubDate>
+            <sparkle:version>1.1.2</sparkle:version>
+            <sparkle:shortVersionString>1.1.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>10.13</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# Paper Annotator 1.1.2
+
+Sweep Pass interaction fixes from the first real-manuscript field test.
+
+- **Fixed: enabling Sweep no longer tints every sentence amber.** The clickable-sentence affordance is now hover-only — the sentence under your pointer gets the dotted underline, everything else stays clean.
+- **Fixed: clicking a marked sentence reliably retracts it.** A single global in-flight lock used to swallow every click while any annotation write was pending (seconds on Dropbox-synced stores); the lock is now per-sentence, so rapid sweeping never drops clicks.
+- **Fixed: clicking a sentence marked by drag-selection no longer silently stacks a duplicate annotation** — it focuses the existing annotation card instead (only same-session sweep clicks carry a retraction token).
+- Sweep sentence geometry is now built strictly from exact source offsets at paint time; the fuzzy-anchoring fallback that could mismatch repeated legal phrasing is gone — a sentence that cannot be resolved exactly simply gets no click affordance.
+- **New: undo for normal (drag-select) marks.** Every mark you create in this session can be retracted while it is still an untouched draft — focus it and press **撤销此标注**. The selection toolbar also gained an explicit **取消 (Esc)** button for dismissing a mis-made selection.
+
+Requirements: Apple silicon Mac running macOS 10.13 or later.
+]]></description>
+            <enclosure url="https://github.com/semantic-craft/paper-annotator-releases/releases/download/v1.1.2/paper-annotator-desktop-1.1.2-macos-arm64.zip" length="37659640" type="application/octet-stream" sparkle:edSignature="GUk7AKdz/6q77lCnM8gRLMo3xsFk3d5mIPEToz5D5lGCNn8h7bllB0TAWq0MIiJUJtsJbdO7bDBArQjEQ1JVAQ=="/>
+        </item>
+        <item>
             <title>1.1.1</title>
             <pubDate>Wed, 15 Jul 2026 06:21:33 +0800</pubDate>
             <sparkle:version>1.1.1</sparkle:version>
@@ -37,26 +58,9 @@ Requirements: Apple silicon Mac running macOS 10.13 or later.
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <enclosure url="https://github.com/semantic-craft/paper-annotator-releases/releases/download/v1.1.0/paper-annotator-desktop-1.1.0-macos-arm64.zip" length="37651534" type="application/octet-stream" sparkle:edSignature="MvtAjYTDde181E/cocyeX5T7FLzUxzHEaalXYqi53+5LmN+/XSWYsxHiH+guYYQ18AR9GKgsy8ziC2BwFsQTBA=="/>
         </item>
-        <item>
-            <title>1.0.1</title>
-            <pubDate>Mon, 13 Jul 2026 11:58:30 +0800</pubDate>
-            <sparkle:version>1.0.1</sparkle:version>
-            <sparkle:shortVersionString>1.0.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>10.13</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Paper Annotator 1.0.1
-
-- Adds **Check for Updates…** to the Paper Annotator application menu.
-- Runs Sparkle's foreground update check so the result is shown immediately.
-- Keeps automatic background update checks enabled.
-
-Requirements: Apple silicon Mac running macOS 10.13 or later.
-]]></description>
-            <enclosure url="https://github.com/semantic-craft/paper-annotator-releases/releases/download/v1.0.1/paper-annotator-desktop-1.0.1-macos-arm64.zip" length="37630201" type="application/octet-stream" sparkle:edSignature="RAkj3S78gC/GU9eyDN5aGH3ZbzvS3J3oJa1T89VpPxIiHWvRSgSEI/RkVa811TUMbthCvftQPn8cyJYb0yrqDw=="/>
-        </item>
     </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: 378J7L6YaI4JovuBZ3CopC5Hw/Nf0/5h3PAzw/+iVlfWz3aKOBSl/a+r39ZSjhFjDdMDHSMyrLXouTxTFSvyDQ==
-length: 4121
+edSignature: vMMMJoi0wDmLulC/BdqzYp6oZYqAJwyz023i+gm7C+FNXA9Q9zlZvUvjnEk1S56M/nasKjYflTFM75/d8ODgCw==
+length: 5225
 -->
