@@ -9,6 +9,25 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
         <description>Signed macOS updates for Paper Annotator.</description>
         <language>en</language>
         <item>
+            <title>1.1.5</title>
+            <pubDate>Wed, 15 Jul 2026 09:17:51 +0800</pubDate>
+            <sparkle:version>1.1.5</sparkle:version>
+            <sparkle:shortVersionString>1.1.5</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>10.13</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# Paper Annotator 1.1.5
+
+Vocabulary honesty release: every control now says exactly what it does.
+
+- **Analysis tools get their own entry.** 专家视角 / 矛盾地图 / 研究简报 are passage-level analysis tasks (five-lens pressure test → contradiction mapping → synthesized brief), not sentence-problem marks — they now live behind a dedicated **分析 ▾** entry at the end of the selection toolbar instead of crowding the marking chips. Digit shortcuts 9/0 still work.
+- **完成标注 · 生成交接单** — the handoff button no longer implies the app will invoke an agent itself; it writes the handoff summary, nothing more. You hand the generated batch prompt files to Codex / Cloud Codex yourself.
+- **换说法·查证** — the rephrase chip now states its real contract: candidates must carry verifiable web sources (facts, terminology, collocations). For pure phrasing passes, use 速扫 / 语感 instead.
+
+Requirements: Apple silicon Mac running macOS 10.13 or later.
+]]></description>
+            <enclosure url="https://github.com/semantic-craft/paper-annotator-releases/releases/download/v1.1.5/paper-annotator-desktop-1.1.5-macos-arm64.zip" length="37657687" type="application/octet-stream" sparkle:edSignature="7fzHFRvb70idHFar2/aQO/szxq3JHoLoe9z2f2gbdy3RvnUHE904UnnI0ynFPbvdIWcMNbXpu22RBw2v2u6NCg=="/>
+        </item>
+        <item>
             <title>1.1.4</title>
             <pubDate>Wed, 15 Jul 2026 08:31:44 +0800</pubDate>
             <sparkle:version>1.1.4</sparkle:version>
@@ -46,30 +65,9 @@ Requirements: Apple silicon Mac running macOS 10.13 or later.
 ]]></description>
             <enclosure url="https://github.com/semantic-craft/paper-annotator-releases/releases/download/v1.1.3/paper-annotator-desktop-1.1.3-macos-arm64.zip" length="37656012" type="application/octet-stream" sparkle:edSignature="PS+JwVbRMpDeu1XopFtkbrNFwVvQu19Ap/7b1rRLzBe5RJMrL9l965QDtjFIS5r2Ev8ZbkY5gpoqP6iuUJ4uAw=="/>
         </item>
-        <item>
-            <title>1.1.2</title>
-            <pubDate>Wed, 15 Jul 2026 07:52:44 +0800</pubDate>
-            <sparkle:version>1.1.2</sparkle:version>
-            <sparkle:shortVersionString>1.1.2</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>10.13</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Paper Annotator 1.1.2
-
-Sweep Pass interaction fixes from the first real-manuscript field test.
-
-- **Fixed: enabling Sweep no longer tints every sentence amber.** The clickable-sentence affordance is now hover-only — the sentence under your pointer gets the dotted underline, everything else stays clean.
-- **Fixed: clicking a marked sentence reliably retracts it.** A single global in-flight lock used to swallow every click while any annotation write was pending (seconds on Dropbox-synced stores); the lock is now per-sentence, so rapid sweeping never drops clicks.
-- **Fixed: clicking a sentence marked by drag-selection no longer silently stacks a duplicate annotation** — it focuses the existing annotation card instead (only same-session sweep clicks carry a retraction token).
-- Sweep sentence geometry is now built strictly from exact source offsets at paint time; the fuzzy-anchoring fallback that could mismatch repeated legal phrasing is gone — a sentence that cannot be resolved exactly simply gets no click affordance.
-- **New: undo for normal (drag-select) marks.** Every mark you create in this session can be retracted while it is still an untouched draft — focus it and press **撤销此标注**. The selection toolbar also gained an explicit **取消 (Esc)** button for dismissing a mis-made selection.
-
-Requirements: Apple silicon Mac running macOS 10.13 or later.
-]]></description>
-            <enclosure url="https://github.com/semantic-craft/paper-annotator-releases/releases/download/v1.1.2/paper-annotator-desktop-1.1.2-macos-arm64.zip" length="37659640" type="application/octet-stream" sparkle:edSignature="GUk7AKdz/6q77lCnM8gRLMo3xsFk3d5mIPEToz5D5lGCNn8h7bllB0TAWq0MIiJUJtsJbdO7bDBArQjEQ1JVAQ=="/>
-        </item>
     </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: 3KrgpCAiIi8V1pUx/yMEpa8m/JM8NWgcdxwwp2Fv9TWlN3bEmKRrVA/QtR9CDW3pYFdhTOt+DwIK/W6XJj2uDA==
-length: 6481
+edSignature: HkCvcSbju1jvVbgFswy+VncTEJUijNgd0rlNqAt2oH9i1nPcvZLlPF24Ip2F9YoBhkQRHhLEyLr1ir94SpYyAQ==
+length: 6082
 -->
