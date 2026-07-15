@@ -9,6 +9,25 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
         <description>Signed macOS updates for Paper Annotator.</description>
         <language>en</language>
         <item>
+            <title>1.1.7</title>
+            <pubDate>Wed, 15 Jul 2026 10:30:45 +0800</pubDate>
+            <sparkle:version>1.1.7</sparkle:version>
+            <sparkle:shortVersionString>1.1.7</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>10.13</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# Paper Annotator 1.1.7
+
+Clean separation between marking problems and strengthening arguments.
+
+- **The selection popup is now purely for sentence problems.** The passage-analysis tools (专家视角 / 矛盾地图 / 研究简报) have left the chip row entirely — the v1.1.5 grouping never actually took effect because the preset API silently stripped their group tag; that projection is now fixed and pinned by a test.
+- **A dedicated 分析 ▾ menu lives in the reading toolbar** (next to 速扫). Select a passage first, then pick a tool — each entry shows what it does (five-lens pressure test, contradiction mapping, synthesized research brief). Without a selection the menu explains how to use it. The selection stays alive while you interact with the menu.
+- Analysis presets never become the sticky sweep default, and digit shortcuts skip them — the rapid-marking flow stays uncontaminated.
+
+Requirements: Apple silicon Mac running macOS 10.13 or later.
+]]></description>
+            <enclosure url="https://github.com/semantic-craft/paper-annotator-releases/releases/download/v1.1.7/paper-annotator-desktop-1.1.7-macos-arm64.zip" length="37677604" type="application/octet-stream" sparkle:edSignature="re1KcXiZDS72FmrHPrT5/Pk/qAlLHgT9t5Nt/anQcjDE/pjqX/r86VAct+avqhCOl6EIVEEaywwopy+1X/agDQ=="/>
+        </item>
+        <item>
             <title>1.1.6</title>
             <pubDate>Wed, 15 Jul 2026 10:15:53 +0800</pubDate>
             <sparkle:version>1.1.6</sparkle:version>
@@ -46,28 +65,9 @@ Requirements: Apple silicon Mac running macOS 10.13 or later.
 ]]></description>
             <enclosure url="https://github.com/semantic-craft/paper-annotator-releases/releases/download/v1.1.5/paper-annotator-desktop-1.1.5-macos-arm64.zip" length="37657687" type="application/octet-stream" sparkle:edSignature="7fzHFRvb70idHFar2/aQO/szxq3JHoLoe9z2f2gbdy3RvnUHE904UnnI0ynFPbvdIWcMNbXpu22RBw2v2u6NCg=="/>
         </item>
-        <item>
-            <title>1.1.4</title>
-            <pubDate>Wed, 15 Jul 2026 08:31:44 +0800</pubDate>
-            <sparkle:version>1.1.4</sparkle:version>
-            <sparkle:shortVersionString>1.1.4</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>10.13</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Paper Annotator 1.1.4
-
-Workbench localization polish from field-test feedback.
-
-- The three workbench mode tabs are now Chinese with hover hints explaining each interaction: **队列**（标注工作台：读正文、建标注、管队列）, **专注模式**（逐条审阅：←/→ 移动，A 接受，Z 撤销）, **文档视图**（只读纵览：按状态下划线）.
-- The reading-view toggle is clearer: **期刊排版**（期刊版式阅读与标注）and **Markdown 源码**（原始源码视图）, each with a hover hint; the **速扫** toggle now explains its full interaction (hover to reveal sentences, click to mark, click again to retract, digits 1–0 switch category).
-- No behavioral changes; all test ids unchanged.
-
-Requirements: Apple silicon Mac running macOS 10.13 or later.
-]]></description>
-            <enclosure url="https://github.com/semantic-craft/paper-annotator-releases/releases/download/v1.1.4/paper-annotator-desktop-1.1.4-macos-arm64.zip" length="37659958" type="application/octet-stream" sparkle:edSignature="xPumXBcsyS671w6mt58jhVbidgqPZo018t19MBUsOCtB4QbtztT/1/h/uF27AMrZdod6UtHO3ADEWiMc0KNyAA=="/>
-        </item>
     </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: 9V5CWDMDKqu5KDqM2ju0HKTE78TsHdO+xeBX9wDa9OHbtus3sEb2/6++3H3Ftww1YThqbNt/T6elEwCX7FkzBw==
-length: 6083
+edSignature: 7pxITwt1AkuHjEuk53IqdOrxysWllqZxf/09LKhLDZKP3qsIP9Sw9WjmJ2eLINqa9HsiP0YSzhbYc/sQFzM9BA==
+length: 6251
 -->
