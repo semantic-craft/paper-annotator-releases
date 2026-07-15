@@ -9,6 +9,25 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
         <description>Signed macOS updates for Paper Annotator.</description>
         <language>en</language>
         <item>
+            <title>1.1.6</title>
+            <pubDate>Wed, 15 Jul 2026 10:15:53 +0800</pubDate>
+            <sparkle:version>1.1.6</sparkle:version>
+            <sparkle:shortVersionString>1.1.6</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>10.13</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# Paper Annotator 1.1.6
+
+The full round-trip now runs without ever touching the command line.
+
+- **完成标注 · 生成交接单 opens a copy dialog.** Clicking it writes the batch prompt files (`agent-prompts/*.md`) and pops a dialog: **复制全文** per batch (paste into a chat-only agent like Cloud Codex, one batch at a time) or **复制封面提示词** (a cover prompt listing every file path + output contract, for file-access agents like Claude Code / Codex). Clipboard-denied webviews fall back to a pre-selected textarea for manual ⌘C.
+- **导入 Agent 结果** — after your agent writes its results to `agent-results/`, the Docket panel shows a one-click **导入 Agent 结果（N 批待回填）** button. It applies each result through the exact same all-or-nothing gate as the CLI `apply-candidates`, then reports per batch: ✓ applied, · already-applied (skipped), ✗ rejected (with reason). The manuscript is never touched; you still review each candidate in 专注模式 and commit explicitly.
+- Re-running either step is idempotent — nothing is duplicated, and a returned batch is skipped.
+
+Requirements: Apple silicon Mac running macOS 10.13 or later.
+]]></description>
+            <enclosure url="https://github.com/semantic-craft/paper-annotator-releases/releases/download/v1.1.6/paper-annotator-desktop-1.1.6-macos-arm64.zip" length="37675930" type="application/octet-stream" sparkle:edSignature="Yn3teCrDXR1Ev/E90LmTuCvo6GEv/CUHM5FIsE216L8KEVnYE9nHQwVym/HCFgDSi97JOMrIfpSW0Lm/bqOzBg=="/>
+        </item>
+        <item>
             <title>1.1.5</title>
             <pubDate>Wed, 15 Jul 2026 09:17:51 +0800</pubDate>
             <sparkle:version>1.1.5</sparkle:version>
@@ -46,28 +65,9 @@ Requirements: Apple silicon Mac running macOS 10.13 or later.
 ]]></description>
             <enclosure url="https://github.com/semantic-craft/paper-annotator-releases/releases/download/v1.1.4/paper-annotator-desktop-1.1.4-macos-arm64.zip" length="37659958" type="application/octet-stream" sparkle:edSignature="xPumXBcsyS671w6mt58jhVbidgqPZo018t19MBUsOCtB4QbtztT/1/h/uF27AMrZdod6UtHO3ADEWiMc0KNyAA=="/>
         </item>
-        <item>
-            <title>1.1.3</title>
-            <pubDate>Wed, 15 Jul 2026 08:18:26 +0800</pubDate>
-            <sparkle:version>1.1.3</sparkle:version>
-            <sparkle:shortVersionString>1.1.3</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>10.13</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Paper Annotator 1.1.3
-
-Second round of field-test fixes for the marking workflow.
-
-- **Fixed: the selection chip toolbar no longer flashes and vanishes before you can pick a preset.** WKWebView delivers the drag gesture's trailing click after the toolbar opens, which dismissed it instantly; dismissals inside the opening gesture's grace window are now ignored, so the toolbar stays until you choose a chip, press Esc, or click elsewhere.
-- **New: clicking a marked sentence opens an in-place action popover.** An untouched draft offers a one-click 撤销标注 right at the text; a mark that agents have already processed shows its status and points you to the queue panel instead. Drag-selection is no longer the only interactive surface.
-- **Undo now works for any untouched mark, from any session.** Deleting a mark no longer depends on a session token: as long as no batch, candidate, or audit has touched it, the annotation panel shows 撤销此标注 and a Sweep second-click on the sentence retracts it — including marks made before an app restart. Marks that agents have already processed remain protected.
-
-Requirements: Apple silicon Mac running macOS 10.13 or later.
-]]></description>
-            <enclosure url="https://github.com/semantic-craft/paper-annotator-releases/releases/download/v1.1.3/paper-annotator-desktop-1.1.3-macos-arm64.zip" length="37656012" type="application/octet-stream" sparkle:edSignature="PS+JwVbRMpDeu1XopFtkbrNFwVvQu19Ap/7b1rRLzBe5RJMrL9l965QDtjFIS5r2Ev8ZbkY5gpoqP6iuUJ4uAw=="/>
-        </item>
     </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: HkCvcSbju1jvVbgFswy+VncTEJUijNgd0rlNqAt2oH9i1nPcvZLlPF24Ip2F9YoBhkQRHhLEyLr1ir94SpYyAQ==
-length: 6082
+edSignature: 9V5CWDMDKqu5KDqM2ju0HKTE78TsHdO+xeBX9wDa9OHbtus3sEb2/6++3H3Ftww1YThqbNt/T6elEwCX7FkzBw==
+length: 6083
 -->
