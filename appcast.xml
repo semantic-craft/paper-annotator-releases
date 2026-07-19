@@ -9,6 +9,25 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
         <description>Signed macOS updates for Paper Annotator.</description>
         <language>en</language>
         <item>
+            <title>1.1.9</title>
+            <pubDate>Sun, 19 Jul 2026 20:26:53 +0800</pubDate>
+            <sparkle:version>1.1.9</sparkle:version>
+            <sparkle:shortVersionString>1.1.9</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>10.13</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# Paper Annotator 1.1.9
+
+LLM 预处理集成 release.
+
+- **交回说明可一键 AI 预处理**：把整段交回说明交给大模型，自动拆解为逐条「作者特别关注」并注入对应批次提示词；无法对应到标注的关注项在轮次面板单独列出，绝不悄悄混入提示词。
+- **新增 LLM 服务商设置**：可配置阿里云百炼 / OpenAI 凭据（本地 0600 文件保存，或走 `DASHSCOPE_API_KEY` / `OPENAI_API_KEY` 环境变量），内置连通性测试；例行保存不会再误清另一家的密钥。
+- 预处理结果按「说明 + 标注指纹」缓存，内容没变不会重复调用；网络波动自动重试一次，超时与 4xx 不重试。
+
+Requirements: Apple silicon Mac running macOS 10.13 or later.
+]]></description>
+            <enclosure url="https://github.com/semantic-craft/paper-annotator-releases/releases/download/v1.1.9/paper-annotator-desktop-1.1.9-macos-arm64.zip" length="37749275" type="application/octet-stream" sparkle:edSignature="y5+naLyneb3ien3l52wUdsn5LxU4XsG86azpDYLFM3pk0d3X0HU+LjLQy6LSTkx1yl6wJT5D3ty5gQrdPYKMBA=="/>
+        </item>
+        <item>
             <title>1.1.8</title>
             <pubDate>Wed, 15 Jul 2026 11:10:39 +0800</pubDate>
             <sparkle:version>1.1.8</sparkle:version>
@@ -66,6 +85,6 @@ Requirements: Apple silicon Mac running macOS 10.13 or later.
     </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: cRbmt2gXcoVq6zjKxARHmXogS4lEWSIdDqrSxTk41aCDgV4++VnyrMX6BygAjEsGuG5J/DNZeTfufE0OYU35Dg==
-length: 5684
+edSignature: YOhBOOeClxyUuZBJ9U40q5CZcQQbt601wt8g620yZWyRmpQEemDgZt1rJoGZL3Yy5UBUh9wPUtKEtNg6nXPYCQ==
+length: 7260
 -->
