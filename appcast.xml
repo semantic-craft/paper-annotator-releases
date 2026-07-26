@@ -9,6 +9,25 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
         <description>Signed macOS updates for Paper Annotator.</description>
         <language>en</language>
         <item>
+            <title>1.1.10</title>
+            <pubDate>Sun, 26 Jul 2026 17:03:36 +0800</pubDate>
+            <sparkle:version>1.1.10</sparkle:version>
+            <sparkle:shortVersionString>1.1.10</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>10.13</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# Paper Annotator 1.1.10
+
+速扫与正文选区体验更新。
+
+- **速扫不再要求边选边分类**：正文选区现在只有一个「速扫」动作，先把所有可疑片段加入清单；到队列阶段再按需批量分类，也可以一直保持「未分类」。
+- **队列新增批量分类**：可筛出未分类标注、勾选多条并一次分配类型；分类变更会同步更新路由，导出时也会明确保留「未分类」状态。
+- **正文拖选更稳、更精确**：优化跨句、跨行以及正向/反向拖选，松开鼠标后保留完整原始选区，不再因中途 selectionchange 抖动而截断。
+
+Requirements: Apple silicon Mac running macOS 10.13 or later.
+]]></description>
+            <enclosure url="https://github.com/semantic-craft/paper-annotator-releases/releases/download/v1.1.10/paper-annotator-desktop-1.1.10-macos-arm64.zip" length="37538628" type="application/octet-stream" sparkle:edSignature="5w2c4JWpI31vE4j0idGiMXaoXtE93Z1OgsdAhIOLZeI8xP2bxviZhazP9N/FJQdF4iKQ++aiaXSD2Cw72rUwBQ=="/>
+        </item>
+        <item>
             <title>1.1.9</title>
             <pubDate>Sun, 19 Jul 2026 20:26:53 +0800</pubDate>
             <sparkle:version>1.1.9</sparkle:version>
@@ -63,28 +82,9 @@ Requirements: Apple silicon Mac running macOS 10.13 or later.
 ]]></description>
             <enclosure url="https://github.com/semantic-craft/paper-annotator-releases/releases/download/v1.1.7/paper-annotator-desktop-1.1.7-macos-arm64.zip" length="37677604" type="application/octet-stream" sparkle:edSignature="re1KcXiZDS72FmrHPrT5/Pk/qAlLHgT9t5Nt/anQcjDE/pjqX/r86VAct+avqhCOl6EIVEEaywwopy+1X/agDQ=="/>
         </item>
-        <item>
-            <title>1.1.6</title>
-            <pubDate>Wed, 15 Jul 2026 10:15:53 +0800</pubDate>
-            <sparkle:version>1.1.6</sparkle:version>
-            <sparkle:shortVersionString>1.1.6</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>10.13</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Paper Annotator 1.1.6
-
-The full round-trip now runs without ever touching the command line.
-
-- **完成标注 · 生成交接单 opens a copy dialog.** Clicking it writes the batch prompt files (`agent-prompts/*.md`) and pops a dialog: **复制全文** per batch (paste into a chat-only agent like Cloud Codex, one batch at a time) or **复制封面提示词** (a cover prompt listing every file path + output contract, for file-access agents like Claude Code / Codex). Clipboard-denied webviews fall back to a pre-selected textarea for manual ⌘C.
-- **导入 Agent 结果** — after your agent writes its results to `agent-results/`, the Docket panel shows a one-click **导入 Agent 结果（N 批待回填）** button. It applies each result through the exact same all-or-nothing gate as the CLI `apply-candidates`, then reports per batch: ✓ applied, · already-applied (skipped), ✗ rejected (with reason). The manuscript is never touched; you still review each candidate in 专注模式 and commit explicitly.
-- Re-running either step is idempotent — nothing is duplicated, and a returned batch is skipped.
-
-Requirements: Apple silicon Mac running macOS 10.13 or later.
-]]></description>
-            <enclosure url="https://github.com/semantic-craft/paper-annotator-releases/releases/download/v1.1.6/paper-annotator-desktop-1.1.6-macos-arm64.zip" length="37675930" type="application/octet-stream" sparkle:edSignature="Yn3teCrDXR1Ev/E90LmTuCvo6GEv/CUHM5FIsE216L8KEVnYE9nHQwVym/HCFgDSi97JOMrIfpSW0Lm/bqOzBg=="/>
-        </item>
     </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: YOhBOOeClxyUuZBJ9U40q5CZcQQbt601wt8g620yZWyRmpQEemDgZt1rJoGZL3Yy5UBUh9wPUtKEtNg6nXPYCQ==
-length: 7260
+edSignature: 2hRtONwxgA0nD/mmZuqGS3c2DYe0AknDxwtXkhKAndx+8N6ig4fFDmkVOGRfSRvQyPoC4LR33t4poQyEH6IcBg==
+length: 6784
 -->
